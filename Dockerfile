@@ -43,4 +43,4 @@ RUN so_file=$(ls /opt/microsoft/**/lib64/libmsodbcsql-*.so.* | grep msodbcsql17)
 
 # Generate the zipped file that can be uploaded as a Lambda Layer
 WORKDIR /opt
-RUN zip -r /pyodbc-layer.zip 
+RUN zip -r /pyodbc-layer.zip .
